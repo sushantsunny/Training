@@ -1,0 +1,52 @@
+Data insecurity is the main drawback of Procedural Oriented Programming.
+First Request Cycle will start then page life cycle will start.
+MVC helps in separation of concern.
+
+View Data works as courier between controller and view.
+viewdata["k1"]=x;(in controller)
+@viewdata["k1'](in view)
+Razor syntax is to invoke C# code.(@)
+
+
+ViewBag is dynamic.
+ViewBag.K1=10;
+viewBag.K2=20;
+View Bag assign value at runtime.
+@ViewBag.K1;
+
+
+TempData excatly same as Viewdata
+
+If one parameter is optional the trailining parameter is also optional.
+
+
+First the request goew to Routing Engines then the pattern is matched if it is successful then it goes to the controller and if there is 
+is any action then the view is generated.
+
+----------------------------------------------------------------------------------------------
+MVC
+MVC separates all logics : model logic, business logic and presentation logic..
+Not only this it helps in logic separation also.
+In physical logic separation controllers, models and views are kept in another folder on root with the help of Area.
+Areas provide a way to separate a large MVC Web Application into smaller functional groupings inside MVC Application and each group contains MVC Structure (Ex. Model, View and Controller folders). Area was introduced in MVC 2
+
+
+For example working on MVC project where requirement is for various section such as account, support, billing etc.
+So here area is the best choice as it will provide strong structure as well as better code managebility.
+
+Structure-----
+Areas
+	->Admin
+		->Controller
+		->View
+		->Modela
+	->Billing
+		->COntroller
+		->View
+		->Models
+View will have shared folder for layput, partial view and an AreaRegistration method similar to RegisterRoutes
+
+----------------------------------------------------------
+
+Master Page=layout
+User Control=Partial View 

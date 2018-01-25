@@ -1,0 +1,58 @@
+  <script>
+
+        var a = function () {
+            alert("Inside a!!");
+        };
+
+        
+      
+
+        function MyFunction(x) {
+           // alert("Hi!" + x);
+            x();
+        }
+
+      
+        MyFunction(a);
+
+        MyFunction(
+            function () {
+
+                alert("Dynamically sent function!");
+            }
+
+        );
+
+
+
+    </script> 
+
+
+[?1/?23/?2018 12:58 PM] Bokade, Aditya: 
+ <script>
+
+        var a = function () {
+            alert("Inside a!!");
+        };
+
+
+   
+        function MyFunction(x) {
+           // alert("Hi!" + x);
+            x();
+        }
+
+      
+        MyFunction(a);
+
+        MyFunction(
+            function () {
+
+                alert("Dynamically sent function!");
+            }
+
+        );
+
+
+
+    </script> 
