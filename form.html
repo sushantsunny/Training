@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <script type="text/javascript">
+        //function validate(promotionalcode) {
+        //    var code = "";
+        //    if  {
+        //        return true;
+        //    } else {
+        //        document.getElementById('couponerror').innerHTML = "Invalid coupon";
+        //        return false;
+        //    }
+        //} 
+        function checkdata() {
+            var Errormsg;
+            var fn = document.getElementById("txtFN").value;
+            var ln = document.getElementById("txtLN").value;
+            var age = document.getElementById("txtage").value;
+            var email = document.getElementById("Txtemail").value;
+             
+            //if (fn == "") 
+            //    Errormsg = "Firstname cannot be empty";
+            //else
+            //    Errormsg = "";
+            //document.getElementById("fn").innerHTML = Errormsg;
+
+            //if (ln == "")
+            //    Errormsg = "Lastname cannot be empty";
+            //else
+            //    Errormsg = "";
+            //document.getElementById("ln").innerHTML = Errormsg;
+
+            if ( age==""  )
+                Errormsg = "please enter  age";
+            else if (!(age > 20 && age <= 55)) {
+                Errormsg = "please enter a valid age";
+            }
+            else
+                Errormsg = "";
+            document.getElementById("age22").innerHTML = Errormsg;
+
+            if ((email.match( "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" )))
+                Errormsg = "please enter a valid email";
+            else
+                Errormsg = "";
+            document.getElementById("email").innerHTML = Errormsg;
+
+            
+           
+
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Web Form</h1>
+    <table cellspacing="2" cellpadding="5" align="center">
+
+        <tr>
+            <td>FirstName:</td>
+            <td><input type="text" id="txtFN" name="firstname" required/></td>
+            <td><p id="fn"></p></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="txtLN" name="lastname" required/></td>
+            <td><p id="ln"></p></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="text" id="txtage" name="age"/></td>
+            <td><p id="age22"></p></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="Male" />Male
+                <input type="radio" name="gender" value="Female" />Female
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <input type="checkbox" name="hobbies" value="Cricket" />Cricket
+                <input type="checkbox" name="hobbies" value="Badminton" />Badminton
+                <input type="checkbox" name="hobbies" value="Carrom" />Carrom
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input id="Txtemail" type="text" required /></td>
+            <td><p id="email"></p></td>
+        </tr>
+        <tr>
+            <td>PromotionCode:</td>
+            <td><input type="text" name="promotionalcode" id="promotionalcode" /></td>
+        </tr>
+        <tr>
+            <td><input id="Btnsubmit" type="button" value="Submit" onclick="return checkdata()" /></td>
+        </tr>
+		<tr>
+		<td><input type="submit" value="Save"/></td>
+		</tr>
+    </table>
+
+
+
+</body>
+</html>

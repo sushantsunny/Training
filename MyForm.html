@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>My Sample Form</title>
+	
+	</head>
+	<body>
+	<form>
+	<table align="center">
+	<tr>
+            <td>First Name:</td>
+            <td><input type="text" id="txtFirstName" name="FirstName" required/></td>
+           
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="txtLastName" name="LastName" required/></td>
+            
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="text" id="txtAge" name="Age" pattern="[0-9]{0,3}"/ ></td>
+           
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="Gender" value="Male" />Male
+                <input type="radio" name="Gender" value="Female" />Female
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <input type="checkbox" name="Hobbies" value="Sports" />Sport
+                <input type="checkbox" name="Hobbies" value="Music" />Music
+                <input type="checkbox" name="Hobbies" value="Art" />Art
+				<input type="checkbox" name="Hobbies" value="Reading" />Reading
+            </td>
+        </tr>
+		<tr>
+		<td><input type="submit" id ="btnSave" value="Save" onsubmit/></td>
+		</tr>
+	</table>
+	</form>
+	</body>
+	</html>

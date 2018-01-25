@@ -1,0 +1,9 @@
+
+
+1) What is Attribue Routing?
+A) -Routing is used to match a URI to specific action by using attributes to define the routes.
+   -The type of routing supported in MVC5 is called Attribute Routing.
+   -
+    
+   
+
